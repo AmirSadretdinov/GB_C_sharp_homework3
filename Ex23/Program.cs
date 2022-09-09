@@ -5,6 +5,7 @@
 
 int[] Cube(int arg)
 {   
+    /*Через while*/
     int i = 1;
     int[] res = new int [arg];
     while (i <= arg)
@@ -13,6 +14,15 @@ int[] Cube(int arg)
         i++;
     }
     return res;
+
+    /* Через for
+    int[] res = new int [arg];
+    for(int i = 1; i<= arg; i++) 
+    {
+        res[i-1] = (int) Math.Pow(i, 3);
+    }
+    return res;
+    */
 }
 
 void PrintArray(int[] array)
